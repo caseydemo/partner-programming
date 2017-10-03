@@ -2,6 +2,9 @@
 	margin: 0px;
 	padding:0px;
 }
+[v-cloak]{
+	display: none;
+}
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -30,5 +33,11 @@ nav a{
 	letter-spacing: 2px;
 	}
 	.active{
-		background-color: e35885;
+		background-color: #e35885;
+	}
+	.messagePara{
+		text-align: center;
+		font-size: 16px;
+		letter-spacing: 2px;
+
 	}
