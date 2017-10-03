@@ -14,10 +14,10 @@
 
 <div id="menu">
 	<nav>
-		<a class="active" id="homeMenu" href="#">home</a>
-		<a id="servicesMenu" href="#">services</a>
-		<a id="projectsMenu" href="#">projects</a>
-		<a id="contactMenu" href="#">contct</a>
+		<a v-on:click="makeActive('homeMenu', 'HOME')" v-bind:class="{ active :homeActive } "id="homeMenu" href="#">home</a>
+		<a v-on:click="makeActive('servicesMenu', 'SERVICES')" v-bind:class="{ active :servicesActive } " id="servicesMenu" href="#">services</a>
+		<a v-on:click="makeActive('projectsMenu', 'PROJECTS')" v-bind:class="{ active :projectsActive } "id="projectsMenu" href="#">projects</a>
+		<a v-on:click="makeActive('contactMenu', 'CONTACT')" v-bind:class="{ active :contactActive } "id="contactMenu" href="#">contct</a>
 	</nav>
 	<div>
 		<p class="messagePara">{{ message }}</p>
